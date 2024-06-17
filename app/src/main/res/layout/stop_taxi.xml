@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/top_module"
+        layout="@layout/apptoolbar"/>
+
+    <com.otaliastudios.zoom.ZoomLayout
+        android:id="@+id/zoomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="20dp"
+        app:alignment="center_horizontal"
+        app:animationDuration="280"
+        app:flingEnabled="true"
+        app:hasClickableChildren="false"
+        app:horizontalPanEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_module"
+        app:maxZoom="2.5"
+        app:maxZoomType="zoom"
+        app:minZoom="1.0"
+        app:minZoomType="zoom"
+        app:oneFingerScrollEnabled="true"
+        app:overPinchable="true"
+        app:overScrollHorizontal="false"
+        app:overScrollVertical="true"
+        app:scrollEnabled="true"
+        app:threeFingersScrollEnabled="true"
+        app:transformation="centerCrop"
+        app:transformationGravity="center_horizontal"
+        app:twoFingersScrollEnabled="true"
+        app:verticalPanEnabled="true"
+        app:zoomEnabled="true">
+
+            <LinearLayout
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/myong_m"
+                    android:layout_gravity="center"
+                    android:text="[ 기흥역 3번 출구 ]"
+                    android:textColor="#35476D"
+                    android:textSize="8sp"
+                    />
+                <ImageView
+                    android:id="@+id/img3rd_out"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/giheung_3rd" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/myong_l"
+                    android:layout_gravity="center"
+                    android:text="Myong Car Pick ! 카풀 추천 위치"
+                    android:textColor="#35476D"
+                    android:textSize="10sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/myong_m"
+                    android:layout_gravity="center"
+                    android:text="[ 기흥역 5번 출구 ]"
+                    android:textColor="#35476D"
+                    android:textSize="8sp"
+                    />
+                <ImageView
+                    android:id="@+id/img5th_out"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/giheung_5th" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myong_m"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:text="[ emart 앞 / 맞은 편 ]"
+                    android:textColor="#35476D"
+                    android:textSize="8sp"
+                    />
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/emart_out" />
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/e_mart" />
+
+            </LinearLayout>
+    </com.otaliastudios.zoom.ZoomLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

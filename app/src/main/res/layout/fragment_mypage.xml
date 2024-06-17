@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@color/white"
+    tools:context=".ui.mypage.MypageFragment">
+
+    <FrameLayout
+        android:id="@+id/lyFrameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/lyCondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:gravity="top|start"
+            android:padding="10dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/headForJoin"
+            >
+
+            <include
+                android:id="@+id/headForJoin"
+                layout="@layout/apptoolbar"/>
+
+
+            <!-- 프로필 영역 -->
+            <RelativeLayout
+                android:id="@+id/lyProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                >
+                <ImageView
+                    android:id="@+id/ivProfile"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/profile_maru"
+                    />
+
+                <TextView
+                    android:id="@+id/tvScore"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:text="A+"
+                    android:textColor="@color/navy"
+                    android:fontFamily="@font/myong_m"
+                    android:textSize="30sp"
+                    android:layout_toEndOf="@id/ivProfile"
+                    />
+                <TextView
+                    android:id="@+id/tvNickname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@id/tvScore"
+                    android:layout_alignParentEnd="true"
+                    android:text="example"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/tvDesc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvNickname"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/tvScore"
+                    android:layout_alignParentEnd="true"
+                    android:text="example@mju.ac.kr"
+                    />
+
+            </RelativeLayout>
+            <!-- //프로필 영역 -->
+            <!-- 옵션 영역 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:paddingStart="10dp"
+                android:text="Options"
+                android:textSize="18sp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnHelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start|center_vertical"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                android:background="@drawable/button_mypage"
+                android:text="    고객센터"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:stateListAnimator="@null"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNotice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start|center_vertical"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                android:background="@drawable/button_mypage"
+                android:text="    공지사항"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:stateListAnimator="@null"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start|center_vertical"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                android:background="@drawable/button_mypage"
+                android:text="    신고하기"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:stateListAnimator="@null"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPrivacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start|center_vertical"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                android:background="@drawable/button_mypage"
+                android:text="    약관 및 정책"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:stateListAnimator="@null"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnModPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start|center_vertical"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                android:background="@drawable/button_mypage"
+                android:text="    비밀번호 변경"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:stateListAnimator="@null"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnModAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start|center_vertical"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                android:background="@drawable/button_mypage"
+                android:text="    계좌정보 변경"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:stateListAnimator="@null"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSignOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start|center_vertical"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                android:background="@drawable/button_mypage"
+                android:text="    회원탈퇴"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:stateListAnimator="@null"
+                />
+            <!-- // 옵션 영역 -->
+
+            <TextView
+                android:id="@+id/tvVersion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border_round_g"
+                android:gravity="start|center_vertical"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="10dp"
+                android:stateListAnimator="@null"
+                android:text="    버전정보 V0.0.0"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <android.widget.Button
+                android:id="@+id/btnLogout"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_navy"
+                android:textColor="@color/white"
+                android:fontFamily="@font/myong_l"
+                android:text="로 그 아 웃"
+                />
+        </LinearLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

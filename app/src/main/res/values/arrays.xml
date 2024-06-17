@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="start_locations">
+        <item>출발지</item>
+        <item>기흥역 5번출구</item>
+        <item>명지대역 1번출구</item>
+        <item>명지대 진입로</item>
+        <item>명지대 학생회관</item>
+        <item>명지대 정문</item>
+        <item>명지대 3공학관</item>
+    </string-array>
+
+    <string-array name="dest_locations">
+        <item>목적지</item>
+        <item>기흥역 5번출구</item>
+        <item>명지대역 1번출구</item>
+        <item>명지대 진입로</item>
+        <item>명지대 학생회관</item>
+        <item>명지대 정문</item>
+        <item>명지대 3공학관</item>
+    </string-array>
+    <string-array name="times">
+        <item>0시</item>
+        <item>1시</item>
+        <item>2시</item>
+        <item>3시</item>
+        <item>4시</item>
+        <item>5시</item>
+        <item>6시</item>
+        <item>7시</item>
+        <item>8시</item>
+        <item>9시</item>
+        <item>10시</item>
+        <item>11시</item>
+        <item>12시</item>
+        <item>13시</item>
+        <item>14시</item>
+        <item>15시</item>
+        <item>16시</item>
+        <item>17시</item>
+        <item>18시</item>
+        <item>19시</item>
+        <item>20시</item>
+        <item>21시</item>
+        <item>22시</item>
+        <item>23시</item>
+
+    </string-array>
+
+    <string-array name="banks">
+        <item>은행선택</item>
+        <item>국민은행</item>
+        <item>기업은행</item>
+        <item>농협은행</item>
+        <item>신한은행</item>
+        <item>우체국</item>
+        <item>SC은행</item>
+        <item>하나은행</item>
+        <item>한국씨티은행</item>
+        <item>우리은행</item>
+        <item>경남은행</item>
+        <item>광주은행</item>
+        <item>대구은행</item>
+        <item>부산은행</item>
+        <item>산업은행</item>
+        <item>수협중앙회</item>
+        <item>전북은행</item>
+        <item>제주은행</item>
+        <item>새마을금고</item>
+        <item>신용협동조합</item>
+        <item>HSBC은행</item>
+        <item>카카오뱅크</item>
+        <item>토스뱅크</item>
+        <item>케이뱅크</item>
+    </string-array>
+</resources>

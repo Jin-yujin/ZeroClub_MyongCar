@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/top_module"
+        layout="@layout/apptoolbar"/>
+
+    <android.widget.Button
+        android:id="@+id/bus_time"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="셔틀 버스 시간 확인하기 🚌"
+        android:textColor="@color/white"
+        android:fontFamily="@font/myong_l"
+        android:background="@drawable/button_navy"
+        app:layout_constraintTop_toBottomOf="@+id/top_module"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <com.otaliastudios.zoom.ZoomLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:alignment="center_horizontal"
+        app:animationDuration="280"
+        app:flingEnabled="true"
+        app:hasClickableChildren="false"
+        app:horizontalPanEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bus_time"
+        app:layout_constraintVertical_bias="0.0"
+        app:maxZoom="2.5"
+        app:maxZoomType="zoom"
+        app:minZoom="1.0"
+        app:minZoomType="zoom"
+        app:oneFingerScrollEnabled="true"
+        app:overPinchable="true"
+        app:overScrollHorizontal="false"
+        app:overScrollVertical="true"
+        app:scrollEnabled="true"
+        app:threeFingersScrollEnabled="true"
+        app:transformation="centerCrop"
+       app:transformationGravity="center_horizontal"
+        app:twoFingersScrollEnabled="true"
+        app:verticalPanEnabled="true"
+       app:zoomEnabled="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/myong_l"
+                    android:text="명지대학교"
+                    android:textColor="#35476D"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/myong_m"
+                    android:text="[ 버스 관리사무소 정류장 ]"
+                    android:textColor="#35476D"
+                    android:textSize="7sp" />
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="105dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="shcool"
+                    android:src="@drawable/mju" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/myong_l"
+                    android:gravity="center"
+                    android:text="명지대학교 - 기흥역"
+                    android:textColor="#35476D"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/myong_m"
+                    android:text="[ 기흥역 5번 출구 ]"
+                    android:textColor="#35476D"
+                    android:textSize="7sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="out_5th"
+                    android:src="@drawable/giheung_5th" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/myong_l"
+                    android:text="명지대학교 - 명지대역"
+                    android:textColor="#35476D"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/myong_m"
+                    android:text="[ 이마트. 상공회의소 앞 ]"
+                    android:textColor="#35476D"
+                    android:textSize="7sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="emart"
+                    android:src="@drawable/emart_out" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/myong_m"
+                    android:text="[ 역북동 행정복지센터 건너편 ]"
+                    android:textColor="#35476D"
+                    android:textSize="7sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="nobrand"
+                    android:src="@drawable/nobrand" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/myong_m"
+                    android:text="[ 명지대역 사거리 ]"
+                    android:textColor="#35476D"
+                    android:textSize="7sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="mju_station"
+                    android:src="@drawable/mju_station" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/myong_m"
+                    android:text="[ 역북동 행정복지센터 앞 ]"
+                    android:textColor="#35476D"
+                    android:textSize="7sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="lux_9"
+                    android:src="@drawable/lux_9" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/myong_m"
+                    android:text="[ 이마트. 상공회의소 건너편 ]"
+                    android:textColor="#35476D"
+                    android:textSize="7sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="emart_re"
+                    android:src="@drawable/e_mart" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/myong_m"
+                    android:text="[ 명진당 ]"
+                    android:textColor="#35476D"
+                    android:textSize="7sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="library"
+                    android:src="@drawable/library" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/myong_m"
+                    android:text="[ 3 공학관 ]"
+                    android:textColor="#35476D"
+                    android:textSize="7sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="3공학관"
+                    android:src="@drawable/eng_3" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/myong_l"
+                    android:text="명지대학교 - 시내"
+                    android:textColor="#35476D"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/myong_m"
+                    android:text="[ 동부경찰서 중앙지구대 앞 ]"
+                    android:textColor="#35476D"
+                    android:textSize="7sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="poilce"
+                    android:src="@drawable/police" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/myong_m"
+                    android:text="[ 용인 CGV ]"
+                    android:textColor="#35476D"
+                    android:textSize="7sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="cgv"
+                    android:src="@drawable/cgv" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/myong_m"
+                    android:text="[ 중앙공용주차장 앞 ]"
+                    android:textColor="#35476D"
+                    android:textSize="7sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="parking"
+                    android:src="@drawable/park" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/myong_m"
+                    android:text="[ 1공학관 ]"
+                    android:textColor="#35476D"
+                    android:textSize="7sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="100dp"
+                    android:contentDescription="1eng"
+                    android:src="@drawable/eng_1" />
+
+            </LinearLayout>
+
+    </com.otaliastudios.zoom.ZoomLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

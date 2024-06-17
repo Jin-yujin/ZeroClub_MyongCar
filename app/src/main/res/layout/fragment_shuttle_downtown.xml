@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.shuttle.ShuttleDowntown">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/imgDowntown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_marginTop="500dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/shuttle_title_downtown"
+                android:padding="10dp"
+                android:src="@drawable/shuttle_downtown" />
+
+            <TextView
+                android:id="@+id/textDowntown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:fontFamily="@font/f_myong_l"
+                android:text="@string/downtownInform"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@+id/imgDowntown" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/f_myong_m"
+                android:padding="15dp"
+                android:text="@string/holiday"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@+id/imgDowntown" />
+
+            <ImageView
+                android:id="@+id/imgHoliday"
+                android:layout_width="wrap_content"
+                android:layout_height="230dp"
+                android:contentDescription="@string/shuttle_title_downtown"
+                android:padding="10dp"
+                android:src="@drawable/holiday_shutlle"
+                app:layout_constraintTop_toBottomOf="@+id/textDowntown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:fontFamily="@font/f_myong_l"
+                android:padding="15dp"
+                android:text="@string/holidayInform"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@+id/imgDowntown"
+                tools:ignore="VisualLintLongText" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.register.RegisterFragment">
+
+    <include
+        android:id="@+id/headForJoin"
+        layout="@layout/apptoolbar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <LinearLayout
+        android:id="@+id/routeSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@drawable/border_bottom"
+        app:layout_constraintTop_toBottomOf="@+id/headForJoin"
+        >
+
+        <Spinner
+            android:id="@+id/spinnerStart"
+            android:layout_width="264dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/spinner_background"
+            android:entries="@array/start_locations"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"
+            android:textColor="#35476D"
+            android:text="▼"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/spinnerDest"
+            android:layout_width="264dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/spinner_background"
+            android:entries="@array/dest_locations"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/informSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/routeSet"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="희망 인원"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinnerMember"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="@drawable/spinner_background"
+            android:entries="@array/member_count"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="출발 날짜"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edGoDate"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:minHeight="48dp"
+            android:focusable="false"
+            android:background="@drawable/spinner_background"
+            android:hint="   날짜 선택"
+            android:text=""
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layouttimeSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/informSet"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_gravity="center_vertical"
+            android:text="출발 시각"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="265dp"
+            android:layout_height="88dp"
+            android:layout_gravity="center_vertical"
+            android:timePickerMode="spinner"
+            app:layout_constraintTop_toBottomOf="@+id/informSet" />
+
+    </LinearLayout>
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/checkSaveInform"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:text="현재 정보를 다음에도 사용"-->
+<!--        android:textColor="#35476D"-->
+<!--        android:textSize="15sp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/layouttimeSet"/>-->
+
+    <LinearLayout
+        android:id="@+id/layout_uselist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:paddingVertical="15dp"
+        android:background="@drawable/border_round"
+        android:elevation="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/layouttimeSet"
+        >
+
+        <LinearLayout
+            android:id="@+id/layout_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center"
+            android:paddingLeft="20dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/myong_l"
+                android:text="🕐 예상 소요시간"
+                android:textColor="#35476D"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/myong_b"
+                android:paddingHorizontal="10dp"
+                android:text=":"
+                android:textColor="#35476D"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textViewExpectTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/myong_l"
+                android:text="@string/time"
+                android:textColor="#35476D"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_totalcost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center"
+            android:paddingLeft="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/layout_time">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/myong_l"
+                android:text="💰 예상 금액"
+                android:textColor="#35476D"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/myong_b"
+                android:paddingHorizontal="10dp"
+                android:text=":"
+                android:textColor="#35476D"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textViewExpectCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/myong_l"
+                android:text="@string/total_cost"
+                android:textColor="#35476D"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkWarning1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="등록된 시간이 되면 약속을 파기할 수 없습니다."
+        android:textColor="#35476D"
+        android:textSize="13sp"
+        app:layout_constraintTop_toBottomOf="@+id/layout_uselist"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="20dp" />
+    <CheckBox
+        android:id="@+id/checkWarning2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="팀원 참여 후 약속을 파기할 수 없으며 \n불참 시 패널티가 부여됩니다"
+        android:textColor="#35476D"
+        android:textSize="13sp"
+        app:layout_constraintTop_toBottomOf="@+id/checkWarning1"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <android.widget.Button
+        android:id="@+id/buttonRegistList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_navy"
+        android:fontFamily="@font/myong_l"
+        android:text="등록하기"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/checkWarning2"
+        tools:layout_editor_absoluteX="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- spinner_background.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="6dp" />
+            <stroke
+                android:width="1dp"
+                android:color="#d0e0f5" />
+        </shape>
+    </item>
+</selector>

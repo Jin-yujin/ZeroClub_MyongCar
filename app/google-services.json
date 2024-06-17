@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "880849996947",
+    "project_id": "myongcar-d176c",
+    "storage_bucket": "myongcar-d176c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880849996947:android:5922d78f87d14eeb335166",
+        "android_client_info": {
+          "package_name": "com.example.mju_car"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmAbwyYyG69pLL1XLLDnB7nUeZbsJrGes"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

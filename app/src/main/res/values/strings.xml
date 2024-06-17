@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">MYONGCAR</string>
+    <string name="email">이메일</string>
+    <string name="email_value">email@mju.ac.kr</string>
+    <string name="password">비밀번호</string>
+    <string name="login">로그인</string>
+    <string name="sign_up">회원가입</string>
+    <string name="nickname">닉네임</string>
+    <string name="destination">목적지</string>
+    <string name="departure">출발지</string>
+    <string name="time"> 0 분 </string>
+    <string name="date"> 2024년 4월 13일(토) AM 11 : 00 </string>
+    <string name="total_cost"> 0 원</string>
+    <string name="back">←</string>
+
+    <string name="giheung_inform">🔔운행기간 : 학기(계절학기 제외) 중 평일만 운행\n   ※ 휴일 및 방학 기간 미운행\n🔔운행 구간 : 버스관리사무소 정류장(기점) → 기흥역 5번 출구 앞 버스정류장 → 버스관리사무소 정류장(기점)</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="txt_btn_refresh">조건 새로고침</string>
+    <string name="notification_button">공지사항</string>
+
+
+
+    <string-array name="member_count">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+
+    <string name="shuttle_title">셔틀</string>
+    <string name="shuttle_title_downtown">명지대역/시내</string>
+    <string name="shuttle_title_giheung">기흥역</string>
+    <string name="shuttle_info_downtown">시내 셔틀 정보입니다.</string>
+    <string name="shuttle_info_giheung">기흥역 셔틀 정보입니다.</string>
+    <string name="shuttle_info_description">셔틀 정보</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="giheungImage">기흥 셔틀 정보</string>
+    <string name="downtownInform">\t※ 18:00 이후 시내셔틀은 제1공학관까지만 운행\n\t※ 18:00 이후 진입로셔틀은 명진당까지만 운행\n\n🔔 시내 노선)\n버스관리사무소 정류장(기점) → 이마트.상공회의소 앞 → 역북동행정복지센터 건너편 → 동부경찰서 중앙지구대 앞 → 용인 CGV → 중앙공영주차장 앞 → 역북동행정복지센터 앞 → 이마트.상공회의소 건너편 → 제1공학관 → 제3공학관
+    \n\n🔔 명지대역 노선)\n버스관리사무소 정류장(기점) → 이마트.상공회의소 앞 → 역북동행정복지센터 건너편 → 명지대역 사거리 → 역북동행정복지센터 앞 → 이마트.상공회의소 건너편 → 명진당 → 제3공학관</string>
+    <string name="holiday">📢\t공휴일 및 방학 중 시내 셔틀 운행</string>
+    <string name="holidayInform">🔔 시내 노선)\n생활관(명현관) → 함박관 → 정문 → 이마트.상공회의소 앞 → 역북동행정복지센터 건너편 → 동부경찰서 중앙지구대 앞 → 용인 CGV → 중앙공영주차장 앞 → 명지대역 사거리 → 역북동행정복지센터 앞 → 이마트.상공회의소 건너편 → 제1공학관 → 생활관(명현관)</string>
+    <string name="msg_token_fmt" translatable="false">토큰 : %s</string>
+    <string name="notice"><![CDATA[<명지대 학우분을 위한 편리한 카풀 택시 이용 및 정산 안내>\n\n안녕하세요 명지대 학생 여러분,\n저희 명카 애플리케이션을 이용해 주셔서 감사합니다.\n명카는 이용자들의 이동 편의성 증진을 위해 \n카풀 택시 애플리케이션 서비스를 도입했습니다.\n모두가 안전하고 편리하게 카풀을 이용할 수 있도록 \n몇 가지 주의사항을 안내드리오니 참고해주시기 바랍니다.\n\n1. 카풀 택시 호출 시 정확한 위치를 입력해 주세요.\n2. 약속된 탑승 시간에 미리 대기하여 \n파티원들이 기다리는 일이 없도록 해주시기를 바랍니다.\n3. 방장의 경우, 승차 전 차량 번호와 기사 정보를 \n반드시 확인한 후 팀 구성원들에게 안내해주세요.\n4. 차량 내에서는 안전벨트를 착용하고 \n과도한 친목은 자제해주세요.\n5. 목적지 외 추가 경유는 삼가주시기 바라나 꼭 필요시, \n팀 구성원과의 사전 협의가 필요하며 \n기사님께도 미리 전달이 필요합니다.\n6. 노쇼 또는 결제 정산 지연 등의 문제가 발생하지 않도록 \n주의해주시고, 노쇼 또는 정산 지연 등으로 신고를 받는 경우, 패널티를 받을 수 있음을 잊지 말아주세요.\n\n명지대학교 학우분들 모두가 만족스러운 \n서비스 이용이 되시길 바랍니다.\n감사합니다.]]></string>
+    <string name="privacy"><![CDATA[<명카 이용 약관 및 정책 안내>\n\n안녕하세요. 명지대학교 학생 여러분,\n명지대학 구성원들의 안전하고 편리한 카풀 택시 이용을 위해 \n다음과 같은 약관 및 정책을 마련하였습니다.\n\n약관\n1. 카풀 택시는 명지대학 구성원에 한해 이용 가능합니다.\n2. 명카는 학교 g-mail계정만 가입이 가능합니다.\n3. 서비스 이용료는 실제 이용 금액에 따라 \n개인이 부담합니다.\n4. 약속된 시간/장소에 나오지 않는 노쇼 행위는 \n제재 대상입니다.\n5. 차량 내 흡연, 음주, 무단 행위 등에 대해서는 \n법적 조치가 취해집니다.\n6. 명카는 서비스 향상을 위해 \n이용 정보를 수집/분석할 수 있습니다.\n\n정책\n1. 카풀 택시 기사 및 차량 안전관리 정책을 시행합니다.\n2. 성범죄/폭력 등 위험운전 기사에 대한 \n제재 정책을 운영합니다.\n3. 개인정보 및 위치정보 보호를 위한 정책을 마련 중 입니다.\n4. 이용 수칙 위반 시 서비스 정지 및 영구 이용이 제한됩니다.\n\n안전하고 원활한 서비스 이용을 위해 \n약관 및 정책을 준수해 주시기 바랍니다.\n문의 사항은 언제든 고객센터로 연락 주시기 바랍니다.\n감사합니다.]]></string>
+    <string name="firebase_channel_id">참여하기</string>
+    <string name="channel_id">MJU_참여 알림</string>
+    <string name="person">🙍‍♂️</string>
+    <string name="team">🚕</string>
+</resources>
